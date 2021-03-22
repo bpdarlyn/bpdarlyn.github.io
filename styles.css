@@ -1,0 +1,286 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+
+/* Variales */
+:root {
+  /* Colors */
+  --color1: #868784;
+  --color2: #d4f2d2;
+  --color3: #beb7df;
+  --color4: #34113f;
+  --color5: #e3dbf3;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: var(--color1);
+  margin: 0;
+}
+
+
+/*                          PRIMERA SECCIÓN */
+/*                              parte 1*/
+.first {
+  padding: 30px 100px 50px 100px;
+}
+
+.flag-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.flag {
+  flex: 1;
+}
+.bol {
+  border: 1px solid var(--color1);
+  width: 33px;
+  height: 23px;
+}
+.avatar {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  font-size: 27px;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.img-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--color1);
+}
+.avatar p {
+  margin: 0px;
+}
+.social {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.social img {
+  transition: all ease-in-out 250ms;
+}
+.social img:hover {
+  width: 70;
+  height: 70;
+  border-radius: 50%;
+  background: #b9b9b9;
+}
+.social-media {
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+  transition: all ease-in-out 250ms;
+}
+
+.line {
+  border-top: 2px solid var(--color1);
+  margin: 0px 15px;
+}
+
+/*                              parte 2*/
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.description p {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+/*                              parte 3*/
+.title-hobbies {
+  font-size: 27px;
+}
+.hobbies {
+  padding: 50px 150px;
+  font-size: 13px;
+  color: var(--color2);
+  background: var(--color4);
+  text-align: justify;
+}
+
+/*                          SEGUNDA SECCIÓN */
+.second {
+  padding: 30px 100px 50px 100px;
+  color: var(--color4);
+  background: var(--color3);
+}
+.second p {
+  margin: 0px;
+}
+.title-second-section {
+  border-bottom: 1px solid var(--color4);
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding: 20px 0px 20px 0px;
+  background: var(--color5);
+}
+
+.content-founder {
+  display: flex;
+  /* float: left; */
+  font-size: 13px;
+  align-items: center;
+  padding-left: 20px;
+  color: rgb(158, 25, 25);
+}
+.proy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 25px;
+}
+
+/*                          TERCERA SECCIÓN */
+.third {
+  padding: 50px 100px;
+  background: var(--color4);
+  color: var(--color2);
+}
+.title-third-section {
+  border-bottom: 1px solid var(--color2);
+  font-size: 25px;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+}
+.title-third-section p {
+  margin: 0px;
+}
+.subtitle-third-section {
+  font-size: 15px;
+  padding: 10px 0px 10px 0px;
+}
+.subtitle-third-section p {
+  margin: 0;
+}
+.list-skills {
+  font-size: 15px;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+.list-skills p {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------ */
+/*                        PANTALLA MEDIANA */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .flag-avatar {
+    display: block;
+    /* background: coral; */
+  }
+  .social {
+    justify-content: center;
+    margin: 0;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .hobbies {
+    padding: 40px 70px;
+  }
+
+  .projects {
+    flex-direction: column;
+    padding: 10px 10px;
+    /* background: cyan; */
+  }
+  .content-founder {
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .proy {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .list-skills {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/*                         PANTALLA CHICA */
+@media (max-width: 480px) {
+  .first {
+    padding: 25px 30px;
+  }
+  .avatar {
+    font-size: 25px;
+  }
+  .social-media {
+    width: 30px;
+    height: 30px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .title-hobbies {
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+  }
+  .hobbies {
+    text-align: justify;
+    padding: 20px 35px;
+    font-size: 13px;
+  }
+
+  /*                          SEGUNDA SECCIÓN */
+  .second {
+    padding: 10px 30px;
+  }
+  .title-second-section {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  .content-founder {
+    font-size: 10px;
+  }
+  .proy {
+    font-size: 12px;
+  }
+
+  /*                          TERCERA SECCIÓN */
+  .third {
+    padding: 30px 30px;
+  }
+  .title-third-section {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  .subtitle-third-section {
+    font-size: 13px;
+    padding: 5px 0px;
+  }
+
+  .list-skills {
+    font-size: 12px;
+  }
+}
